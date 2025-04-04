@@ -34,7 +34,7 @@ with st.form('User Information & Feedbacks', clear_on_submit=False):
 if submitted:
     if user_name and user_surname and user_sex != "Select an option":
         st.success(f'Form submitted! :white_check_mark: \n\n')
-        st.write(f'**Name:** {user_name}\n\n **Surname:** {user_name}\n\n **Age:** {user_age} years\n\n **Gender:** {user_sex}\n\n')
+        st.write(f'**Name:** {user_name}\n\n **Surname:** {user_surname}\n\n **Age:** {user_age} years\n\n **Gender:** {user_sex}\n\n')
         st.write(f'**Use Hours:** {range_of_hours[1]-range_of_hours[0]}\n\n **Rank:** {rank}\n\n')
         
         if rank <= 2:
